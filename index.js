@@ -1,16 +1,12 @@
-const title =document.createElement('h2');
-title.textContent = 'Hello ';
-const main=document.querySelector('main');
-main.appendChild(title);
-const divCarte = document.createElement('div');
-divCarte.classList.add('carte');
-const balise ="<h2>how are you </h2>";
-divCarte.innerHTML = balise;
-main.append(divCarte);
-const titres=document.querySelectorAll('h1');
-console.log(titres);
-for (let titre = 0; titre < array.length; titre++) {
-    const element = array[titre];
-    console.log(element);
-}
+// app.js
 
+document.addEventListener('DOMContentLoaded', function () {
+    // Sélectionnez les éléments nécessaires du DOM
+    const navToggle = document.querySelector('.nav-toggle');
+    const navbar = document.querySelector('.navbar');
+
+    // Ajoutez un écouteur d'événements pour le bouton de bascule de la navigation
+    navToggle.addEventListener('click', function () {
+        navbar.classList.toggle('show');
+    });
+});
